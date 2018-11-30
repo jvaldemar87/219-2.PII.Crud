@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/myStyle.css" />
 </head>
 
-<body>
+<body name="body" id="body">
     <header>
         <?php 
 		require_once('Layouts/header.php');
@@ -24,8 +24,8 @@
         $sql= ("select Imagen_dir, Texto from nosotros_cont");
 if ($result = $db->query($sql)) {
     while ($row = $result->fetch_row()) {
-    echo "<img src='".$row[0]."' / width=300 height=300>";
-	echo $row[1];
+    echo "<img src='".$row[0]."' / width=300 height=300><p>";
+    echo "<p align='justify'>".$row[1];
     }
 
     $result->close();

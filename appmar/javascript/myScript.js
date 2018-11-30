@@ -1,7 +1,7 @@
 function onstart() {
     
     var mensaje;
-    var opcion = confirm("Clicka en Aceptar o Cancelar");
+    var opcion = confirm("Clickea en Aceptar para que veas nuestras promociones");
     if (opcion == true) {
         mensaje = "Has clickado OK";
         location.href="Servicios.php";

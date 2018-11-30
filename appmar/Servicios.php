@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/myStyle.css" />
 </head>
 
-<body>
+<body name="body" id="body">
     <header>
         <?php 
 		require_once('Layouts/header.php');
