@@ -13,9 +13,10 @@ $accion = 'insert';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/myStyle.css" />
+    <script src="javascript/myScript.js"></script>
 </head>
 
-<body name="body" id="body">
+<body class="class_body" id="body">
     <header>
         <?php 
 		require_once('Layouts/header.php');

@@ -10,3 +10,9 @@ function onstart() {
 	}
 	document.getElementById("ejemplo").innerHTML = mensaje;
 }
+
+function salirDePagina(){
+    //onclickk
+    alert ("funciona");
+}
+

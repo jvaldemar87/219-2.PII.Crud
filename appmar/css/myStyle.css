@@ -72,3 +72,23 @@ td {
 .txtbodyimg {
     width: 50px;
 }
+
+.class_section {
+    padding: 1.5em;
+    height: 5px;
+    bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.class_footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.class_body {
+    padding-bottom: 1.5em;
+    margin-bottom: 100px;
+}

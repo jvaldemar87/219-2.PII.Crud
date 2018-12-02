@@ -10,14 +10,14 @@
     <script src="javascript/myScript.js"></script>
 </head>
 
-<body name="body" id="body" onload="onstart()">
+<body class="class_body" id="body" onload="onstart()">
     <header>
         <?php 
 		require_once('Layouts/header.php');
 	?>
     </header>
 
-    <section>
+    <section class="class_section">
         <div align="center" class="container">
             <?php
 
@@ -37,7 +37,7 @@ if ($result = $db->query($sql)) {
         ?>
         </div>
     </section>
-    <footer>
+    <footer class="class_footer">
         <div align="center">
             <?php 
 		include_once('Layouts/footer.php');

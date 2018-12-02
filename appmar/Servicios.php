@@ -7,16 +7,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/myStyle.css" />
+    <script src="javascript/myScript.js"></script>
 </head>
 
-<body name="body" id="body">
+<body class="class_body" id="body">
     <header>
         <?php 
 		require_once('Layouts/header.php');
 	?>
     </header>
 
-    <section>
+    <section class="class_section">
         <div align="center" class="container">
             <?php
 		
@@ -25,28 +26,28 @@
 if ($result = $db->query($sql)) {
     while ($row = $result->fetch_row()) {
 	?>
-            <div class="box ">
+            <div class="box" onclick="salirDePagina()">
                 <?php echo "<img src='".$row[0]."' / width=300 height=300>";?>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[2] ; ?>">
                     <?php echo $row[1];?>
                 </a>
             </div>
-            <div class="box">
+            <div class="box" onclick="salirDePagina()">
                 <?php echo "<img src='".$row[3]."' / width=300 height=300>";?>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[5] ; ?>">
                     <?php echo $row[4];?>
                 </a>
             </div>
-            <div class="box">
+            <div class="box" onclick="salirDePagina()">
                 <?php echo "<img src='".$row[6]."' / width=300 height=300>";?>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[8] ; ?>">
                     <?php echo $row[7];?>
                 </a>
             </div>
-            <div class="box">
+            <div class="box" onclick="salirDePagina()">
                 <?php echo "<img src='".$row[9]."' / width=300 height=300>";?>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[11] ; ?>">
@@ -61,7 +62,7 @@ if ($result = $db->query($sql)) {
         ?>
         </div>
     </section>
-    <footer>
+    <footer class="class_footer">
         <div align="center">
             <?php 
 		include_once('Layouts/footer.php');
