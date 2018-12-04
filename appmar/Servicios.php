@@ -17,7 +17,7 @@
 	?>
     </header>
 
-    <section class="class_section">
+    <section class="class_section" onmousedown="clickBoton()">
         <div align="center" class="container">
             <?php
 		
@@ -27,28 +27,32 @@ if ($result = $db->query($sql)) {
     while ($row = $result->fetch_row()) {
 	?>
             <div class="box" onclick="salirDePagina()">
-                <?php echo "<img src='".$row[0]."' / width=300 height=300>";?>
+                <?php echo "<img src='".$row[0]."' / width=300 height=300 onerror='onerrorresult()'>";?>
+                <h4 id="onerrorresult"></h4>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[2] ; ?>">
                     <?php echo $row[1];?>
                 </a>
             </div>
             <div class="box" onclick="salirDePagina()">
-                <?php echo "<img src='".$row[3]."' / width=300 height=300>";?>
+                <?php echo "<img src='".$row[3]."' / width=300 height=300 onerror='onerrorresult()'>";?>
+                <h4 id="onerrorresult"></h4>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[5] ; ?>">
                     <?php echo $row[4];?>
                 </a>
             </div>
             <div class="box" onclick="salirDePagina()">
-                <?php echo "<img src='".$row[6]."' / width=300 height=300>";?>
+                <?php echo "<img src='".$row[6]."' / width=300 height=300> onerror='onerrorresult()'";?>
+                <h4 id="onerrorresult"></h4>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[8] ; ?>">
                     <?php echo $row[7];?>
                 </a>
             </div>
             <div class="box" onclick="salirDePagina()">
-                <?php echo "<img src='".$row[9]."' / width=300 height=300>";?>
+                <?php echo "<img src='".$row[9]."' / width=300 height=300 onerror='onerrorresult()'>";?>
+                <h4 id="onerrorresult"></h4>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[11] ; ?>">
                     <?php echo $row[10];?>

@@ -26,7 +26,7 @@
 if ($result = $db->query($sql)) {
     while ($row = $result->fetch_row()) {
     echo "<img src='".$row[0]."' / width=300 height=300><p>";
-    echo "<p align='justify'>".$row[1];
+    echo "<p align='justify' oncopy='itwascopied()'>".$row[1];
     }
 
     $result->close();

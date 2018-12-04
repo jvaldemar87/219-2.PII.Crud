@@ -22,20 +22,20 @@ $accion = 'insert';
 		require_once('Layouts/header.php');
 	?>
     </header>
-    <form action="post.php" method="post">
+    <form action="post.php" method="post" onsubmit="envio()">
 
         <div class="icon-user-plus"></div>
-
+        <p>
         <input type="text" name="nombre" value="<?php echo $datos['nombre']; ?>" placeholder="Nombre" required="requiered">
-
+        <p>
+        <p>
         <input type="text" name="email" value="<?php echo $datos['email']; ?>" placeholder="Em@il" required="requiered">
-
-
-        <textarea name="comentarios" required="requiered"> <?php echo $datos['comentarios']; ?></textarea>
-
+        <p>
+        <textarea name="comentarios" required="requiered" onkeypress="pulsar(event)"> <?php echo $datos['comentarios']; ?></textarea>
+        <p>
         <input type="hidden" name="id" value="<?php  echo $datos['id']?>">
         <input type="hidden" name="accion" value="<?php  echo $accion?>">
-        <input type="submit" name="submit" value="Enviar">
+        <input type="submit" name="submit" value="Enviar" id="boton">
     </form>
 
 
