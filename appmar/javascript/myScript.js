@@ -40,3 +40,8 @@ function onerrorresult(){
 function itwascopied(){
     alert("Esta informacion es privada")
 }
+
+function campoSelect(x) {
+    x.style.background = "yellow";
+}
+

@@ -43,7 +43,7 @@ if ($result = $db->query($sql)) {
                 </a>
             </div>
             <div class="box" onclick="salirDePagina()">
-                <?php echo "<img src='".$row[6]."' / width=300 height=300> onerror='onerrorresult()'";?>
+                <?php echo "<img src='".$row[6]."' / width=300 height=300 onerror='onerrorresult()'>";?>
                 <h4 id="onerrorresult"></h4>
                 <br clear="all">
                 <a class="txtbodyimg" href="<?php echo $row[8] ; ?>">
