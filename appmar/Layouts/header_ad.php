@@ -23,6 +23,9 @@
 				<li>
 					<a href="Admin_header.php">Header Cliente</a>
 				</li>
+				<li>
+					<a href="Admin_footer.php">Footer Cliente</a>
+				</li>
 			</ul>
 	</div>
 </nav>
