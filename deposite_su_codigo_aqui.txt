@@ -18,6 +18,6 @@ input
 keypress
 dblclick
 mouseover
-mouseup
+mouselave
 mousedown
 mouseenter
