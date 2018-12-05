@@ -19,7 +19,7 @@
             <td colspan="2" align="center" ><input type="submit" name="enviar" value="Cambiar"></td>
             </tr>
 //-->
-
+    <script src="javascript/OnWheel.js" type="text/javascript"></script>
     <center><strong>
             <h1>Administracion de contenido Pag ServiciosI</h1>
         </strong></center>
@@ -35,7 +35,7 @@
         <form action="Cambiar_contenidoini.php" method="POST" enctype="multipart/form-data">
 
             <center>
-                <table border="1">
+                <table border="1" id="zoom" >
                     <tr>
                         <td class="c1"><strong>Servicio 1 </strong>
 
@@ -56,7 +56,7 @@
                     </tr>
                     <tr>
                         <td class="c1"><strong>Link:</strong></td>
-                        <td>
+                        <td onwheel="OnWheel()">
                             <?php echo "Texto: ".$row[2]."<br>"; ?>
                         </td>
                         <td> <input type="text" name="txtnom1" value=""></td>

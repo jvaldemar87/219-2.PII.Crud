@@ -11,13 +11,14 @@
     ?>  
 </header>
     <body >
-     
+    <script src="javascript/OnInput.js" type="text/javascript"></script>
     <center><strong><h1>Administracion de contenido Pag Nosotos</h1></strong></center>
-    <p>
-        <form action="Cambiar_Nosotors.php" method="POST" enctype="multipart/form-data">
+  
+        <form action="Cambiar_Nosotos.php" method="POST" enctype="multipart/form-data">
             <center><table border="1">
             <tr >        
-                <td><strong>Nuevo Texto:</strong></td><td> <input type="text" name="txtnom" value=""required></td>
+                <td><strong>Nuevo Texto:</strong></td><td> <input type="text" name="txtnom" value=""required
+                    id="Escrito" oninput="OnInput()"></td>
             </tr>
             <tr >
             <td ><strong>Nueva Imagen:</strong></td>  <td><input type="file" name="foto" id="foto"required></td>
@@ -27,7 +28,7 @@
             </tr>
             </center></table>
         </form>    
-        
+        <p id="Posible"></p>
         <br><br>
     </body>
 </html>

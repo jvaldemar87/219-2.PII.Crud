@@ -13,7 +13,10 @@
 </header>
 
 <body>
-
+    <script src="javascript/ConvertirTexto.js" type="text/javascript"></script>
+    <script src="javascript/OnSelectInput.js" type="text/javascript"></script>
+    <script src="javascript/Agrandar.js" type="text/javascript"></script>
+    <script src="javascript/Normal.js" type="text/javascript"></script>
     <center><strong>
             <h1>Administracion del Icono y texto header</h1>
         </strong></center>
@@ -34,13 +37,13 @@
                         <td>
                             <?php echo "Texto Actual : ".$row[1]."<br>"; ?>
                         </td>
-                        <td> <input type="text" name="txtnom" value=""></td>
+                        <td> <input type="text" name="txtnom" value=""onselect="OnSelectInput (this)"></td>
 
                     </tr>
                     <tr>
                         <td><strong>Imagen:</strong></td>
                         <td>
-                            <?php echo "Imagen Actual".'<img src="'.$row[0].'" width="100" heigth="100"><br>'; ?>
+                            <?php echo "Imagen Actual".'<img onmouseover="Agrandar(this)" onmouseout="Normal(this)" src="'.$row[0].'" width="100" heigth="100"><br>'; ?>
                         </td>
                         <td><input type="file" name="foto" id="foto"></td>
                     </tr>
